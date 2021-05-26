@@ -5,5 +5,5 @@ applications:
     routes:
       - route: ((appName))-((reviewRoute)).((domain))
     env:
-      WELCOME_MESSAGE: ((welcomeMessage))
+      WELCOME_MESSAGE: ${{ secrets.CF_APP_NAME }}
       JBP_CONFIG_OPEN_JDK_JRE: ((jreVersion))
