@@ -1,5 +1,6 @@
 welcomeMessage: Hello from the review environment
 jreVersion: '{ jre: { version: 11.+ } }'
-appName: pal-tracker
+##appName: pal-tracker
+appName: ${{ secrets.CF_APP_NAME }}
 reviewRoute: cem-akbaba
 domain: apps.evans.pal.pivotal.io
