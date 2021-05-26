@@ -1,5 +1,5 @@
 welcomeMessage: Hello from the review environment
 jreVersion: '{ jre: { version: 11.+ } }'
-appName: palt-racker
-reviewRoute: cem-akbaba.
-domain: apps.evans.pal.pivotal.io
+appName: ${{ secrets.CF_APP_NAME }}
+reviewRoute: ${{ secrets.CF_ROUTE_REVIEW }}
+domain: ${{ secrets.CF_DOMAIN }}
