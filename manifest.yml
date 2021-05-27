@@ -4,6 +4,8 @@ applications:
     path: build/libs/pal-tracker.jar
     routes:
       - route: ((appName))-((reviewRoute)).((domain))
+    services:
+      - tracker-database
     env:
       WELCOME_MESSAGE: ((welcomeMessage))
       JBP_CONFIG_OPEN_JDK_JRE: ((jreVersion))
